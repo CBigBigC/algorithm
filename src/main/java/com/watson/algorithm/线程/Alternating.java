@@ -42,6 +42,7 @@ public class Alternating {
         Alternating alternating = new Alternating();
         new Thread(alternating::print1).start();
         new Thread(alternating::print2).start();
+        System.gc();
     }
 
 
